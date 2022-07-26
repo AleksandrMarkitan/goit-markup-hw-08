@@ -44,7 +44,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal__send-button {
+.form__send-button {
   display: block;
   margin: auto;
 
@@ -80,14 +80,14 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-}
-.data-close-modal-button__icon {
-  fill: currentColor;
 
   &:hover,
   :focus {
     color: $accent-blue-color;
   }
+}
+.data-close-modal-button__icon {
+  fill: currentColor;
 }
 
 .portfolio-nav-button {

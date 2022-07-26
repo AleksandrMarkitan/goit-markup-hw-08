@@ -129,7 +129,7 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal__send-button {
+.form__send-button {
   display: block;
   margin: auto;
   min-width: 200px;
@@ -170,13 +170,13 @@ button {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.data-close-modal-button:hover,
+.data-close-modal-button :focus {
+  color: #2196f3;
+}
 
 .data-close-modal-button__icon {
   fill: currentColor;
-}
-.data-close-modal-button__icon:hover,
-.data-close-modal-button__icon :focus {
-  color: #2196f3;
 }
 
 .portfolio-nav-button {
@@ -262,7 +262,7 @@ button {
   display: block;
   width: 100%;
   height: 4px;
-  bottom: -1px;
+  bottom: 0px;
   border-radius: 2px;
   background-color: #2196f3;
   -webkit-transform: translateY(1px);
