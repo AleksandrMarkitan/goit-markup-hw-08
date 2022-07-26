@@ -1,0 +1,23 @@
+.form__checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  background-image: url("../images/icon-check.svg");
+
+  transition-property: background-color, border;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.form__checkbox:checked + .form__checkbox-icon {
+  border-color: transparent;
+  background-color: $accent-blue-color;
+}

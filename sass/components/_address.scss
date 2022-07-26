@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.address__googlmaps {
+  color: $footer-logo-accent-color;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.address__contacts {
+  color: $address-links-color;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover {
+    color: $accent-blue-color;
+  }
+  &:focus {
+    color: $accent-blue-color;
+  }
+}

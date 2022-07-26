@@ -1,0 +1,30 @@
+$animation-works-overlay: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
+$transition-duration-modal: 950ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$primary-bg-color: #ffffff;
+$footer-bg-color: #2f303a;
+$footer-logo-accent-color: #ffffff;
+$footer-social-link-color: rgba(255, 255, 255, 0.1);
+$advantages-icon-bg-color: #f5f4fa;
+$section-team-bg-color: #f5f4fa;
+$hero-bg-color: #2f303a;
+$hero-title-color: #ffffff;
+$button-active-text-color: #ffffff;
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-blue-color: #2196f3;
+$accent-black-color: #000000;
+$address-links-color: rgba(255, 255, 255, 0.6);
+$portfolio-button-bg-color: #f5f4fa;
+$header-border-color: #ececec;
+$signature-works-border-color: #eeeeee;
+$icon-color: #afb1b8;
+$backdrop-bg-color: rgba(0, 0, 0, 0.2);
+$works-overlay-bg-color: rgba(33, 150, 243, 0.9);
+$placeholder-color: rgba(117, 117, 117, 0.5);
+
+$general-font-family: "Roboto", sans-serif;
+$logo-font-family: "Raleway", sans-serif;

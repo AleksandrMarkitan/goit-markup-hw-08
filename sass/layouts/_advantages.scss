@@ -1,0 +1,33 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages__icon-container {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+
+  background-color: $advantages-icon-bg-color;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}

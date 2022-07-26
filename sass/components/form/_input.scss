@@ -1,0 +1,69 @@
+.form-data-box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-data-box__item {
+  position: relative;
+}
+
+.form-data-box__label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+
+  display: block;
+  text-align: start;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+
+  transform: translateY(-50%);
+  transition: transform $transition-duration $transition-timing-function;
+}
+
+.form-data-box__input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-left: 42px;
+
+  width: 100%;
+
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.form-data-box__input:focus {
+  border: 1px solid $accent-blue-color;
+}
+
+.form-data-box__input:focus + .form-data-box__label,
+.form-data-box__input:not(:placeholder-shown) + .form-data-box__label {
+  transform: translate(-42px, -38px);
+}
+
+.form-data-box__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translate(15px, -50%);
+
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.form-data-box__input:focus ~ .form-data-box__icon {
+  fill: $accent-blue-color;
+}

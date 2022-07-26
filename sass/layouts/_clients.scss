@@ -1,0 +1,41 @@
+.clients {
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+
+  transition-property: color, border;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:focus {
+    color: $accent-blue-color;
+    border: 1px solid $accent-blue-color;
+  }
+  &:hover {
+    color: $accent-blue-color;
+    border: 1px solid $accent-blue-color;
+  }
+}
+
+.clients__icon {
+  fill: $icon-color;
+}
+
+.clients__icon {
+  fill: currentColor;
+}

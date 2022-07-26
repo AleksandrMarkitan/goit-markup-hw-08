@@ -1,0 +1,12 @@
+.form__agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form__agreement-link {
+  color: $accent-blue-color;
+  text-underline-position: under;
+}

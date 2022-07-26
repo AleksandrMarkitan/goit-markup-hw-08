@@ -1,0 +1,127 @@
+.subscribe-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: $primary-bg-color;
+  background: $accent-blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+}
+
+.hero-button {
+  display: block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: 0px auto 0px;
+  min-width: 200px;
+
+  background: $accent-blue-color;
+  color: $button-active-text-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__send-button {
+  display: block;
+  margin: auto;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: $primary-bg-color;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.data-close-modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  background-color: $primary-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.data-close-modal-button__icon {
+  fill: currentColor;
+
+  &:hover,
+  :focus {
+    color: $accent-blue-color;
+  }
+}
+
+.portfolio-nav-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  background: &portfolio-button-bg-color;
+  color: &title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: &transition-duration;
+  transition-timing-function: &transition-timing-function;
+
+  &--see {
+    background: $accent-blue-color;
+    color: $button-active-text-color;
+  }
+
+  &:hover {
+    background-color: $accent-blue-color;
+    color: $button-active-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:focus {
+    background-color: $accent-blue-color;
+    color: $button-active-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
