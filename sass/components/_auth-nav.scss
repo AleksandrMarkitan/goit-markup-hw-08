@@ -1,37 +1,37 @@
-.auth-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-}
+// .auth-nav {
+//   // display: flex;
+//   // flex-wrap: wrap;
+//   // gap: 50px;
+// }
 
-.auth-nav__link {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+// .auth-nav__link {
+//   // display: flex;
+//   // flex-wrap: wrap;
+//   // gap: 10px;
+//   // align-items: center;
+//   // padding-top: 32px;
+//   // padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+//   // font-weight: 500;
+//   // line-height: 1.14;
+//   // letter-spacing: 0.02em;
 
-  color: $primary-text-color;
+//   // color: $primary-text-color;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+//   // transition-property: color;
+//   // transition-duration: var(--transition-duration);
+//   // transition-timing-function: var(--transition-timing-function);
 
-  &:hover {
-    color: $accent-blue-color;
-  }
+//   // &:hover {
+//   //   color: $accent-blue-color;
+//   // }
 
-  &:focus {
-    color: $accent-blue-color;
-  }
-}
+//   // &:focus {
+//   //   color: $accent-blue-color;
+//   // }
+// }
 
-.auth-nav__icon-envelope,
-.auth-nav__icon-smartphone {
-  fill: currentColor;
-}
+// .auth-nav__icon-envelope,
+// .auth-nav__icon-smartphone {
+//   // fill: currentColor;
+// }

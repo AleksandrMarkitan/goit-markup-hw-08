@@ -2,12 +2,37 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 57px;
+    width: 100%;
+  }
+
+  @include mq(desk) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
 }
 
 .advantages__item {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 90px) / 4);
+  flex-direction: column;
+  flex-basis: 100%;
+
+  @include mq(tab) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include mq(desk) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .advantages__icon-container {
@@ -23,6 +48,8 @@
 }
 
 .advantages__title {
+  text-align: center;
+
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -30,4 +57,8 @@
   text-transform: uppercase;
 
   color: $title-text-color;
+
+  @include mq(tab) {
+    text-align: start;
+  }
 }

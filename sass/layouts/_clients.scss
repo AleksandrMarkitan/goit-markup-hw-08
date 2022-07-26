@@ -1,30 +1,42 @@
 .clients {
-  margin-right: auto;
-  margin-left: auto;
-
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @include mq(tab) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @include mq(desk) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
-  width: 170px;
-  height: 92px;
+  min-height: 92px;
 
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   border: 1px solid $icon-color;
   border-radius: 4px;
-
-  transition-property: color, border;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-
   &:focus {
     color: $accent-blue-color;
+    outline: transparent;
     border: 1px solid $accent-blue-color;
+  }
+
+  @include mq(desk) {
+    transition-property: color, border;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   }
   &:hover {
     color: $accent-blue-color;
