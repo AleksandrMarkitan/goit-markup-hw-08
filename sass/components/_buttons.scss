@@ -138,14 +138,14 @@
 
   &__icon-close-menu {
     display: none;
+  }
 
-    &__is-open .menu-button__icon-close-menu {
-      display: block;
-    }
+  &__is-open .menu-button__icon-close-menu {
+    display: block;
+  }
 
-    &__is-open .menu-button__icon-menu {
-      display: none;
-    }
+  &__is-open .menu-button__icon-menu {
+    display: none;
   }
 
   @include mq(tab) {
