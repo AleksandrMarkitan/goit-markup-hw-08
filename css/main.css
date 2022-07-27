@@ -365,8 +365,6 @@ button {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   gap: 20px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -383,6 +381,10 @@ button {
 }
 
 .subscribe-form__form-input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
@@ -703,6 +705,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -732,7 +735,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__adress-container {
@@ -760,7 +762,6 @@ button {
 }
 
 .footer-join-container__link {
-  margin-bottom: 60px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -775,12 +776,6 @@ button {
 .footer-join-container__link:hover {
   background: #2196f3;
 }
-@media screen and (min-width: 1200px) {
-  .footer-join-container__link {
-    margin-bottom: 0;
-  }
-}
-
 .footer-join-container__icon {
   fill: #ffffff;
 }
@@ -1222,6 +1217,9 @@ button {
 }
 
 .works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 450px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1267,7 +1265,20 @@ button {
   }
 }
 
+.works__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .works__signature {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 19px;
   padding-left: 23px;
@@ -1275,16 +1286,6 @@ button {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-@media screen and (min-width: 768px) {
-  .works__signature--grow {
-    padding-bottom: 55px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .works__signature {
-    padding-bottom: 19px;
-  }
 }
 
 .works__title {

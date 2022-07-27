@@ -27,6 +27,7 @@
 }
 
 .works__item {
+  display: flex;
   max-width: 450px;
   flex-basis: 100%;
 
@@ -65,7 +66,12 @@
   }
 }
 
+.works__link {
+  display: flex;
+  flex-direction: column;
+}
 .works__signature {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 19px;
   padding-left: 23px;
@@ -73,16 +79,6 @@
   border-right: 1px solid $signature-works-border-color;
   border-left: 1px solid $signature-works-border-color;
   border-bottom: 1px solid $signature-works-border-color;
-
-  @include mq(tab) {
-    &--grow {
-      padding-bottom: 55px;
-    }
-  }
-
-  @include mq(desk) {
-    padding-bottom: 19px;
-  }
 }
 
 .works__title {
