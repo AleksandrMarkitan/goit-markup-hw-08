@@ -23,23 +23,29 @@
           <a class="logo header__logo link" href="./index.html"
             >Web<span class="header__logo--accent">Studio</span></a
           >
-          <button class="menu-button button is-open" type="button">
+          <button
+            class="menu-button is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg
-              class="menu-button__icon-menu"
               width="24"
               height="16"
               aria-label="переключатель мобильного меню"
             >
               <use
-                class="menu-button__icon-close-menu"
+                class="icon-close"
                 href="./images/sprite.svg#icon-close-mob-menu"
               ></use>
-              <use
-                class="menu-button__icon-menu"
-                href="./images/sprite.svg#icon-menu"
-              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <p>контент</p>
+          </div>
           <ul class="main-nav list">
             <li>
               <a
@@ -927,5 +933,6 @@
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
     <!-- <script src="./js/footer.js"></script> -->
+    <script src="./js/_mobile-menu.js"></script>
   </body>
 </html>

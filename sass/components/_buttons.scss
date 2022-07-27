@@ -88,17 +88,18 @@
   :focus {
     color: $accent-blue-color;
   }
-}
-.data-close-modal-button__icon {
-  fill: currentColor;
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .portfolio-nav-button {
   padding: 6px 22px;
   border-radius: 4px;
 
-  background: &portfolio-button-bg-color;
-  color: &title-text-color;
+  background: $portfolio-button-bg-color;
+  color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -106,8 +107,8 @@
   letter-spacing: 0.03em;
 
   transition-property: background-color, color, box-shadow;
-  transition-duration: &transition-duration;
-  transition-timing-function: &transition-timing-function;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &--see {
     background: $accent-blue-color;
@@ -127,32 +128,4 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  @include mq(tab) {
-    display: none;
-  }
-
-  @include mq(desk) {
-    display: none;
-  }
-}
-
-.menu-button__icon-close-menu {
-  display: none;
-}
-
-.menu-button.is-openn .menu-button__icon-close-menu {
-  display: block;
-}
-
-.menu-button.is-openn .menu-button__icon-menu {
-  display: none;
 }
