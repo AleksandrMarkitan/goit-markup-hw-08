@@ -1,21 +1,34 @@
 .portfolio__nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 
-.portfolio__nav-item:not(:last-child) {
-  margin-right: 8px;
+  @include mq(tab) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 50px;
+  }
 }
 
 .works {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+
+  @include mq(tab) {
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
 }
 
 .works__item {
-  flex-basis: calc((100% - 60px) / 3);
+  max-width: 450px;
+  flex-basis: 100%;
 
   transition-property: box-shadow;
   transition-duration: $transition-duration;
@@ -40,6 +53,16 @@
     transform: translateY(0);
     opacity: 1;
   }
+
+  @include mq(tab) {
+    max-width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include mq(desk) {
+    max-width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .works__signature {
@@ -50,6 +73,16 @@
   border-right: 1px solid $signature-works-border-color;
   border-left: 1px solid $signature-works-border-color;
   border-bottom: 1px solid $signature-works-border-color;
+
+  @include mq(tab) {
+    &--grow {
+      padding-bottom: 55px;
+    }
+  }
+
+  @include mq(desk) {
+    padding-bottom: 19px;
+  }
 }
 
 .works__title {

@@ -1,37 +1,94 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-color: $hero-bg-color;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Img-bg-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    url(../images/hero/hero-bg_s.jpg);
+  // mobile retina screen
+  @include mq(retina) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_s@2x.jpg);
+  }
+
+  @include mq(tab) {
+    max-width: 768px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_m.jpg);
+    // tablet retina screen
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-bg_m@2x.jpg);
+    }
+  }
+
+  @include mq(desk) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-bg_l.jpg);
+    // desktop retina screen
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-bg_l@2x.jpg);
+    }
+  }
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin: 0px auto 30px;
 
   color: $hero-title-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include mq(desk) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__backdrop {
-  z-index: 11;
-  position: fixed;
-  top: 0;
-  left: 0;
+  @include mq(desk) {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }

@@ -1,13 +1,8 @@
 .subscribe-form__form-label {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
-
-  width: 358px;
+  flex-basis: 100%;
 
   font-weight: 700;
   font-size: 14px;
@@ -15,14 +10,23 @@
   text-transform: uppercase;
 
   color: $primary-bg-color;
+
+  @include mq(tab) {
+  }
+
+  @include mq(desk) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 358px;
+  }
 }
 
 .subscribe-form__form-input {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
-
-  display: block;
 
   font-size: 16px;
   line-height: calc(20 / 16);

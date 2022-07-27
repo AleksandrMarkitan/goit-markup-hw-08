@@ -59,19 +59,17 @@
 }
 
 .team__social-link {
-  @include mq(desk) {
-    &:hover {
-      background-color: $accent-blue-color;
-      color: $primary-bg-color;
-    }
-
-    &:focus {
-      background-color: $accent-blue-color;
-      color: $primary-bg-color;
-    }
+  &:hover {
+    background-color: $accent-blue-color;
+    color: $primary-bg-color;
   }
 
-  .team-social-link__icon {
-    fill: currentColor;
+  &:focus {
+    background-color: $accent-blue-color;
+    color: $primary-bg-color;
   }
+}
+
+.team-social-link__icon {
+  fill: currentColor;
 }

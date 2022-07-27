@@ -16,12 +16,12 @@
 //   // align-items: center;
 // }
 
-// .header__logo {
-//   // margin-right: 93px;
-//   // padding-top: 24px;
-//   // padding-bottom: 25px;
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
-//   // &--accent {
-//   //   color: $accent-black-color;
-//   // }
-// }
+  &--accent {
+    color: $accent-black-color;
+  }
+}

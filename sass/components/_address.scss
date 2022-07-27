@@ -1,7 +1,17 @@
 .address {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  @include mq(tab) {
+  }
+
+  @include mq(desk) {
+    flex-direction: unset;
+    gap: 9px;
+  }
 }
 
 .address__googlmaps {
