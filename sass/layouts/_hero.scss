@@ -85,10 +85,10 @@
 }
 
 .hero__backdrop {
-  @include mq(desk) {
-    z-index: 11;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+  // @include mq(desk) {
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // }
 }
